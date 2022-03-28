@@ -1,0 +1,66 @@
+table {
+    color: lavender;
+}
+a {
+    text-decoration: none;
+    color: #52daff;
+}
+a:hover, .checkboxClass:checked+label {
+    color: aquamarine;
+}
+body {
+    background: rgba(72, 72, 180, 0.98);
+}
+table {
+    text-align: center;
+}
+input[type='text'] {
+    background: #5455c4;
+    border-radius: 10px;
+    color: lavender;
+    text-align: center;
+}
+.checkboxClass {
+    display: none;
+}
+.checkboxClass:hover+label {
+    color: #ef9e9e;
+    transition: .25s;
+}
+.checkboxClass+label {
+    margin: 5px;
+}
+input[type='submit'] {
+    color: lavender;
+    padding: 20px 30px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-image: linear-gradient(to right, rgb(104, 105, 255) 0%, rgba(72, 72, 180, 0.98) 50%, #ef9e9e 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    transition: .5s;
+}
+input[type='submit']:hover {
+    background-position: right center;
+}
+::placeholder {
+    color: #bab8d0;
+    text-align: center;
+}
+input[type='button'] {
+    color: lavender;
+    border-radius: 5px;
+    margin-top: 5px;
+    background-image: linear-gradient(to right, rgb(104, 105, 255) 0%, rgba(72, 72, 180, 0.98) 50%, #ef9e9e 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    transition: .5s;
+}
+input[type='button']:hover {
+    background-position: right center;
+}
+.error-message {
+    color: #ef9e9e;
+}

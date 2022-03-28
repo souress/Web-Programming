@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+    <title>Web_Lab_3</title>
+    <link href="resources/fav.ico"/>
+    <link rel="stylesheet" href="resources/css/index.css"/>
+    <h:outputScript library="javascript" name="jquery-3.6.0.js"/>
+    <h:outputScript>
+        function time() {
+            $("#body").load("#body");
+        }
+
+        setInterval(time, 9000);
+    </h:outputScript>
+</h:head>
+
+<f:view>
+    <h:body id="body">
+        <div id="main-div">
+            <div id="name" align="center">
+                <a href="https://github.com/souress">Клименко Кирилл Владимирович</a><br/>P3214<br/>Вариант: 2491
+            </div>
+            <div id="clock" align="center">
+                <p>${timeBean.hour}:${timeBean.min}:${timeBean.sec} ${timeBean.day}.${timeBean.month}.${timeBean.year}</p>
+            </div>
+            <div id="button" align="center">
+                <h:form>
+                    <h:commandButton styleClass="button" action="MainPage" value="okaaaay let's goooo"/>
+                </h:form>
+            </div>
+        </div>
+    </h:body>
+</f:view>
+
+</html>
